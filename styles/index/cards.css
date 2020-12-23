@@ -1,0 +1,83 @@
+.card-container {
+  font-family: "Lobster Two", cursive;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  color: goldenrod;
+  text-shadow: -1px -2px white;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  position: fixed;
+  top: 30%;
+  left: 18%;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 2s linear,opacity 2s linear;
+}
+  
+.card-one {
+  margin: 1em;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 2s linear,opacity 2s linear;
+}
+  
+.card-two {
+  margin: 1em;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 2s linear,opacity 2s linear;
+}
+  
+.card-three {
+  margin: 1em;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 2s linear,opacity 2s linear;
+}
+
+.love-note {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 2s linear,opacity 2s linear;
+}
+  
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .card-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 2.5em;
+    text-shadow: -1px -3px white;
+  }
+  .left {
+    margin-left: 3em;
+    width: 50vw;
+  }
+  .right {
+    margin-left: 10vw;
+  }
+  .button {
+    position: fixed;
+    left: 43%;
+    top: 45%;
+  }
+}
